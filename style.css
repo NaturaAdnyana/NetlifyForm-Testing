@@ -11,7 +11,7 @@ h1 {
   font-family: "Platypi", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 h1 span {
   display: block;
@@ -28,6 +28,7 @@ p {
   max-width: 600px;
   padding: 20px;
   text-align: justify;
+  margin-bottom: 20px;
 }
 
 p::first-letter {
