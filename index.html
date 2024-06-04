@@ -6,38 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
   <title>Netlify Form Testing</title>
 </head>
 
-<body class="bg-dark bg-gradient">
-  <div class="container">
-    <h1>Hola, Welcome to<span>Whisper</span></h1>
-    <hr size="5">
-    <h2>Makasih yang sudah gabut datang kesini, disini kalian boleh kirim pesan <span>apa saja</span> kepada saya lewat form berikut, ngaco juga tidak kenapa :D
-      <br>Ditunggu ya pesannya...
-    </h2>
+<body class=".bg-light .bg-gradient">
+  <section class="pt-5">
+    <h1>Welcome to<span>Whisper</span></h1>
+    <p>Bayangkan di depan kamu muncul burung merpati, menawarkan kaki kosongnya untuk mengantarkan pesan "anonim" ke
+      entitas tidak jelas bernama Natura. Kamu dibebaskan untuk mengirim pesan apapun, kabar baik,
+      buruk, horor, teori konspirasi, tawaran politik, dan banyak lainnya yang bisa kamu bayangkan. Tidak ada
+      batasan untuk kamu,
+      silahkan langsung tulis pesanmu dibawah ini.
+    </p>
 
     <form name="contact" method="POST" netlify>
       <div class="mb-3">
-        <label for="name" class="form-label">Nama Anda :</label>
+        <label for="name" class="form-label">Siapa?</label>
         <input type="text" class="form-control" id="name" placeholder="Asep" name="name">
       </div>
       <div class="mb-3">
-        <label for="message" class="form-label">Pesan :</label>
+        <label for="message" class="form-label">Pesan?</label>
         <textarea class="form-control" placeholder="Ho oh" id="message" name="messsage"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary"
-        onclick="swal('Terimakasih!', 'Akan aku cek segera :)', 'success');">Kirim <i
-          class="bi bi-megaphone-fill"></i></button>
+      <button type="submit" class="btn btn-dark btn-lg"
+        onclick="swal('Terimakasih!', 'Akan aku cek segera :)', 'success');">Kirim</button>
     </form>
-  </div>
+  </section>
   <footer>
-    <div class="card-body">
-      <h5 class="card-title">&copyFully Made By NaturaAdnyana</h5>
-      <p class="card-text">Saran & Kritik? DM<br>Dibuat atas request <a href="https://twitter.com/doni_wirawans"><i class="bi bi-twitter"></i>
-          Doni Wirawans</a></p>
+    <div class="card-body text-center">
+      <div class="card-title">Diciptakan secara tidak sengaja oleh Natura.</div>
+      <div>Dibangun tahun 2021 | Direnovasi tahun 2024.</div>
+      <div class="card-text">Saran & Kritik? <a href="https://www.instagram.com/natura.adn/">DM</a> </div>
     </div>
   </footer>
 
