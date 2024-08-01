@@ -1,49 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Netlify Form Testing</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Netlify Form Testing</title>
-</head>
+  <body class=".bg-light .bg-gradient">
+    <section class="pt-5">
+      <h1>Welcome to<span>Whisper</span></h1>
+      <p>
+        Bayangkan di depan kamu muncul seekor burung merpati, menawarkan kakinya
+        yang kosong untuk mengantarkan pesan "anonim" ke sosok bernama Natura.
+        Kamu dibebaskan untuk mengirim pesan apapun, entah itu kabar baik,
+        buruk, horor, teori konspirasi, tawaran politik, dan banyak lainnya yang
+        bisa kamu bayangkan. Tidak ada batasan untuk kamu, silahkan langsung
+        tulis pesanmu di bawah ini.
+      </p>
 
-<body class=".bg-light .bg-gradient">
-  <section class="pt-5">
-    <h1>Welcome to<span>Whisper</span></h1>
-    <p>Bayangkan di depan kamu muncul seekor burung merpati, menawarkan kakinya yang kosong untuk mengantarkan pesan
-      "anonim" ke seseorang bernama Natura. Kamu dibebaskan untuk mengirim pesan apapun, entah itu kabar baik, buruk,
-      horor, teori konspirasi, tawaran politik, dan banyak lainnya yang bisa kamu bayangkan. Tidak ada batasan untuk
-      kamu, silahkan langsung tulis pesanmu di bawah ini.
-    </p>
-
-    <form name="contact" method="POST" netlify>
-      <div class="mb-3">
-        <label for="name" class="form-label">Siapa?</label>
-        <input type="text" class="form-control" id="name" placeholder="Asep" name="name">
+      <form name="contact" method="POST" netlify>
+        <div class="mb-3">
+          <label for="name" class="form-label">Siapa?</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Asep"
+            name="name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Pesan?</label>
+          <textarea
+            class="form-control"
+            placeholder="Ho oh"
+            id="message"
+            name="messsage"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-dark btn-lg"
+          onclick="swal('Terimakasih!', 'Akan aku cek segera :)', 'success');"
+        >
+          Kirim
+        </button>
+      </form>
+    </section>
+    <footer>
+      <div class="card-body text-center">
+        <div class="card-title">
+          Diciptakan secara tidak sengaja oleh Natura.
+        </div>
+        <div>Dibangun tahun 2021 | Direnovasi tahun 2024.</div>
+        <div class="card-text">
+          Saran & Kritik? <a href="https://www.instagram.com/natura.adn/">DM</a>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Pesan?</label>
-        <textarea class="form-control" placeholder="Ho oh" id="message" name="messsage"></textarea>
-      </div>
-      <button type="submit" class="btn btn-dark btn-lg"
-        onclick="swal('Terimakasih!', 'Akan aku cek segera :)', 'success');">Kirim</button>
-    </form>
-  </section>
-  <footer>
-    <div class="card-body text-center">
-      <div class="card-title">Diciptakan secara tidak sengaja oleh Natura.</div>
-      <div>Dibangun tahun 2021 | Direnovasi tahun 2024.</div>
-      <div class="card-text">Saran & Kritik? <a href="https://www.instagram.com/natura.adn/">DM</a> </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
 </html>
